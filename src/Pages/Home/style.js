@@ -6,6 +6,12 @@ export const HomeStyledContainer = styled.section`
   width: 100%;
   height: 100vh;
   background: ${Colors.primaryColor};
+
+  padding-left: 2rem;
+
+  @media (max-width: 798px) {
+    padding-left: 0;
+  }
 `;
 
 export const HomeContentStyled = styled.div`
@@ -15,11 +21,13 @@ export const HomeContentStyled = styled.div`
   justify-content: space-between;
 
   column-gap: 2rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
 
   @media (max-width: 798px) {
     flex-direction: column;
     padding-top: 5rem;
+    padding-left: 0;
   }
 `;
 
@@ -38,9 +46,21 @@ export const HomeDescriptionStyled = styled.div`
     font-size: ${FontsSizes.fontExtraBig};
   }
 
+  @media (max-width: 975px) {
+    span {
+      font-size: ${FontsSizes.fontBigRegular};
+    }
+  }
+
   @media (max-width: 798px) {
     order: 1;
-    padding-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    span {
+      font-size: ${FontsSizes.fontBigExtraRegular};
+    }
   }
 
   @media (max-width: 530px) {
@@ -92,6 +112,20 @@ export const HomeEffectTyping = styled.div`
 
   white-space: nowrap;
   overflow: hidden;
+
+  @media (max-width: 798px) {
+    width: 225px;
+    font-size: ${FontsSizes.fontSmallRegular};
+
+    @keyframes textTypingEffect {
+      from {
+        width: 0;
+      }
+      to {
+        width: 225px;
+      }
+    }
+  }
 
   @media (max-width: 530px) {
     width: 220px;
@@ -181,6 +215,24 @@ export const HomeAnimationStyled = styled.div`
       width: 350px;
       margin: 0 auto;
       align-self: center;
+    }
+  }
+
+  @media (max-width: 386px) {
+    width: 300px;
+
+    img {
+      width: 300px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 316px) {
+    width: 250px;
+
+    img {
+      width: 250px;
     }
   }
 `;
