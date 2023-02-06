@@ -19,7 +19,7 @@ export const HomeContentStyled = styled.div`
 
   @media (max-width: 798px) {
     flex-direction: column;
-    padding-top: 1rem;
+    padding-top: 5rem;
   }
 `;
 
