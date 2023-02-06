@@ -4,7 +4,7 @@ import { Colors, FontsSizes, FontFamilly } from "../../styles/GlobalStyles";
 
 export const HomeStyledContainer = styled.section`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: ${Colors.primaryColor};
 `;
 
