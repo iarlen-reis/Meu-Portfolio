@@ -45,10 +45,12 @@ export const FontFamilly = {
 
 export const FontsSizes = {
   fontRegular: "2rem",
+  fontRegularPlus: "2.5rem",
   fontSmall: "1.3rem",
+  fontSmallRegular: "1rem",
   fontExtraSmall: "0.9rem",
   fontBig: "3rem",
-  fontExtraBig: "4rem",
+  fontExtraBig: "4.5rem",
 };
 
 export default GlobalStyles;

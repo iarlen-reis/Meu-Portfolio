@@ -32,4 +32,35 @@ export const UlStyled = styled.ul`
       color: ${Colors.textColor};
     }
   }
+
+  @media (max-width: 798px) {
+    display: ${({ mobile }) => (mobile ? "flex" : "none")};
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    top: 5.7rem;
+    right: 0;
+
+    z-index: 2;
+
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid rgba(61, 61, 61, 0.5);
+
+    background-color: ${Colors.primaryColor};
+  }
+`;
+
+export const MobileMenuContainerStyled = styled.div`
+  display: none;
+
+  svg {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  @media (max-width: 798px) {
+    display: block;
+  }
 `;

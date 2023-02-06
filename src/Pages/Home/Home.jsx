@@ -7,9 +7,12 @@ import {
   HomeDescriptionStyled,
   HomeAnimationStyled,
   HomeEffectTyping,
+  HomeContactContainer,
 } from "./style";
 
-import devoloper from "/home/developer.png";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+
+import devoloper from "/home/profile.png";
 
 const Home = () => {
   return (
@@ -17,8 +20,19 @@ const Home = () => {
       <ContainerStyled>
         <HomeContentStyled>
           <HomeDescriptionStyled>
-            Olá, Meu nome é <span>Iarlen Reis.</span>
+            Olá, Eu sou <span>Iarlen Reis.</span>
             <HomeEffectTyping>desenvolvedor front-end</HomeEffectTyping>
+            <HomeContactContainer>
+              <a href="https://github.com/iarlen-reis" target="_blank">
+                <BsGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/iarlen-santos-reis-480119247/"
+                target="_blank"
+              >
+                <BsLinkedin />
+              </a>
+            </HomeContactContainer>
           </HomeDescriptionStyled>
           <HomeAnimationStyled>
             <img
