@@ -8,10 +8,6 @@ export const TechnologyContainerStyled = styled.section`
 
   color: ${Colors.textColorSecundary};
   background: ${Colors.primaryColor};
-
-  @media (max-width: 500px) {
-    height: 100%;
-  }
 `;
 
 export const TechnologyDescriptionContainer = styled.div`
