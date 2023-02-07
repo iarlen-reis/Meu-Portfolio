@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 // pages
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
+import Technology from "./Pages/Technology/Technology";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<About />} />
+          <Route path="/tecnologias" element={<Technology />} />
         </Routes>
         <Footer />
       </BrowserRouter>
