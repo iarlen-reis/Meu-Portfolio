@@ -135,7 +135,7 @@ export const TechnologyButtonsContainer = styled.div`
 export const TechnologyTextContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
 
   border: 1px solid ${Colors.textColorSecundary};
   border-radius: 4px;
