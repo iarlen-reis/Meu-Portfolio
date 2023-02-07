@@ -33,13 +33,13 @@ const Header = () => {
               <NavLink to="/">Início</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Sobre</NavLink>
+              <NavLink to="/sobre">Sobre</NavLink>
             </li>
             <li>
-              <NavLink to="/skills">Habilidades</NavLink>
+              <NavLink to="/habilidades">Habilidades</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projetos</NavLink>
+              <NavLink to="/projetos">Projetos</NavLink>
             </li>
           </UlStyled>
           <MobileMenuContainerStyled>
