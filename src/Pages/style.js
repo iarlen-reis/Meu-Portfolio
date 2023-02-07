@@ -13,6 +13,7 @@ export const AboutStyledContainer = styled.section`
   background: ${Colors.primaryColor};
 
   @media (max-width: 798px) {
+    height: 100%;
     padding-left: 0;
   }
 `;
