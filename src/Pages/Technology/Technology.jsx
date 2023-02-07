@@ -28,7 +28,7 @@ const Technology = () => {
       <ContainerStyled>
         <TechnologyDescriptionContainer>
           <h1>Tecnologias</h1>
-          <p>Essas são as tecnologias que utilizo.</p>
+          <p>Selecione uma das tecnologias abaixo.</p>
         </TechnologyDescriptionContainer>
         <TechnologyContainer>
           <TechnologyButtonsContainer>
@@ -38,6 +38,7 @@ const Technology = () => {
               onChange={({ target }) => setSkills(target.value)}
               name="skills"
               id="javascript"
+              checked
             />
             <label htmlFor="javascript">
               <span>JavaScript</span>
