@@ -33,6 +33,7 @@ export const Colors = {
   headerColor: "#0b0b0b",
   primaryColor: "#0f0f0f",
   secundaryColor: "#393E46",
+  tertiaryColor: "#201f1f",
   textColor: "#e3b505",
   textColorSecundary: "#EEEEEE",
   tealColor: "#89C9B8",
@@ -50,6 +51,7 @@ export const FontsSizes = {
   fontSmall: "1.3rem",
   fontSmallRegular: "1rem",
   fontExtraSmall: "0.9rem",
+  fontSmallPlus: "1.6rem",
 
   fontBig: "3rem",
   fontBigExtraRegular: "3.5rem",
