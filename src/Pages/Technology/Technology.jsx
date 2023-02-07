@@ -11,7 +11,7 @@ import {
 } from "./style";
 
 const Technology = () => {
-  const [skills, setSkills] = useState("");
+  const [skills, setSkills] = useState("0");
 
   const skillsInfos = [
     "Sou javascript",
@@ -38,7 +38,6 @@ const Technology = () => {
               onChange={({ target }) => setSkills(target.value)}
               name="skills"
               id="javascript"
-              checked
             />
             <label htmlFor="javascript">
               <span>JavaScript</span>
