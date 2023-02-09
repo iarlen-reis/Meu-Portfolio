@@ -74,7 +74,7 @@ const About = () => {
               </TextAdditionalContainer>
             )}
             <button onClick={ChangeTechs}>
-              Tecnologias que pretendo aprender no futuro
+              Tecnologias que pretendo aprender
               {techs ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {techs && (
