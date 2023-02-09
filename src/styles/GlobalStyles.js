@@ -52,6 +52,7 @@ export const FontsSizes = {
   fontSmallRegular: "1rem",
   fontExtraSmall: "0.9rem",
   fontSmallPlus: "1.6rem",
+  fontSmallMenu: "0.7rem",
 
   fontBig: "3rem",
   fontBigExtraRegular: "3.5rem",

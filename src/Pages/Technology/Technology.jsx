@@ -15,7 +15,7 @@ const Technology = () => {
       <ContainerStyled>
         <TechnologyDescriptionContainer>
           <h1>Tecnologias</h1>
-          <p>Deslize para ver as tecnologias.</p>
+          <p>Deslize para o lado para ver as tecnologias.</p>
         </TechnologyDescriptionContainer>
         <CarouselCard />
       </ContainerStyled>

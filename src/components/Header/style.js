@@ -16,6 +16,12 @@ export const NavStyled = styled.nav`
     color: ${Colors.textColorSecundary};
     font-size: ${FontsSizes.fontRegular};
   }
+
+  @media (max-width: 440px) {
+    img {
+      width: 160px;
+    }
+  }
 `;
 
 export const UlStyled = styled.ul`
@@ -29,8 +35,14 @@ export const UlStyled = styled.ul`
     transition: 0.6s;
 
     &:hover {
-      color: ${Colors.textColor};
     }
+  }
+
+  .active {
+    color: ${Colors.headerColor};
+    font-weight: 500;
+    background: ${Colors.textColorSecundary};
+    padding: 0.3rem 0.5rem;
   }
 
   @media (max-width: 798px) {
@@ -49,6 +61,24 @@ export const UlStyled = styled.ul`
     border-bottom: 1px solid rgba(61, 61, 61, 0.5);
 
     background-color: ${Colors.primaryColor};
+  }
+
+  @media (max-width: 600px) {
+    a {
+      font-size: ${FontsSizes.fontSmall};
+    }
+  }
+
+  @media (max-width: 460px) {
+    a {
+      font-size: ${FontsSizes.fontExtraSmall};
+    }
+  }
+
+  @media (max-width: 325px) {
+    a {
+      font-size: ${FontsSizes.fontSmallMenu};
+    }
   }
 `;
 
