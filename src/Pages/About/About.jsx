@@ -7,7 +7,7 @@ import {
   AboutDescriptionAdditionalContainer,
   AboutDescriptionAdditional,
   TextAdditionalContainer,
-} from "../style";
+} from "./style";
 
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
@@ -29,8 +29,8 @@ const About = () => {
     <AboutStyledContainer>
       <ContainerStyled>
         <AboutHeaderContainer>
-          <h1>Informações sobre mim</h1>
-          <p>Essas são algumas das informações sobre mim.</p>
+          <h1>Informações</h1>
+          <p>Esse é um breve resumo sobre mim.</p>
         </AboutHeaderContainer>
         <AboutDescriptionContainer>
           <p>
@@ -58,29 +58,32 @@ const About = () => {
           <h2>Informações Adicionais</h2>
           <AboutDescriptionAdditional>
             <button onClick={ChangePlans} plans={plans ? "true" : "false"}>
-              Quais os meus planos para o futuro?
+              Cursos que já concluir
               {plans ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {plans && (
               <TextAdditionalContainer>
                 <p>
-                  Meus principais planos para o futuro é ingressa em uma
-                  faculdade de análise e desenvolvimento de sistemas e atingir a
-                  fluência no inglês.
+                  - Curso de javascript moderno do basico ao avancado, professor
+                  Otávio miranda (146 horas).
+                </p>
+                <p>
+                  - React do Zero a Maestria, Professor Matheus Battisti (30
+                  horas).
                 </p>
               </TextAdditionalContainer>
             )}
             <button onClick={ChangeTechs}>
-              Quais tecnologias pretendo aprender no futuro?
+              Tecnologias que pretendo aprender no futuro
               {techs ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {techs && (
               <TextAdditionalContainer>
                 <p>
-                  Como disse acima, pretendo aprender mais sobre back-end, logo
-                  inicialmente pretendo dominar completamente o nodeJs, por ser
-                  semelhante ao javascript. Já na área de front-end, pretendo
-                  aprender mais sobre o reactJs e progredir para o nextJs.
+                  Pretendo aprender mais sobre back-end, logo inicialmente
+                  pretendo dominar completamente o nodeJs, por ser semelhante ao
+                  javascript. Já na área de front-end, pretendo aprender mais
+                  sobre o reactJs e progredir para o nextJs.
                 </p>
               </TextAdditionalContainer>
             )}

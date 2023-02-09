@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Colors, FontsSizes, FontFamilly } from "../styles/GlobalStyles";
+import { Colors, FontsSizes, FontFamilly } from "../../styles/GlobalStyles";
 
 export const AboutStyledContainer = styled.section`
   width: 100%;
@@ -123,8 +123,8 @@ export const AboutDescriptionAdditional = styled.div`
 export const TextAdditionalContainer = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
-
+  flex-direction: column;
+  row-gap: 0.5rem;
   font-size: ${FontsSizes.fontExtraSmall};
 
   padding: 1.5rem 0.8rem;
