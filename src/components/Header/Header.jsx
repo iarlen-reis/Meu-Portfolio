@@ -24,14 +24,16 @@ const Header = () => {
   };
 
   const toogleMenuMobile = () => {
-    setMobile(!mobile);
+    setMobile(false);
   };
 
   return (
     <AsideStyled>
       <ContainerStyled>
         <NavStyled>
-          <img src={Logo} width={220} alt="Logo do meu portfolio" />
+          <NavLink to="/" onClick={toogleMenuMobile}>
+            <img src={Logo} width={220} alt="Logo do meu portfolio" />
+          </NavLink>
           <UlStyled mobile={mobile}>
             <li>
               <NavLink to="/" onClick={toogleMenuMobile}>
