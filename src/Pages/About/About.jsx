@@ -58,7 +58,7 @@ const About = () => {
           <h2>Informações Adicionais</h2>
           <AboutDescriptionAdditional>
             <button onClick={ChangePlans} plans={plans ? "true" : "false"}>
-              Cursos que já concluir
+              Cursos concluídos
               {plans ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {plans && (

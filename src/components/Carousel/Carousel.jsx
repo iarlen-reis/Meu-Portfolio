@@ -1,6 +1,8 @@
 import React from "react";
 
 import JavaScriptImage from "/carousel/javascript.png";
+import NodeJsImage from "/carousel/nodejs.png";
+import PythonImage from "/carousel/python.png";
 import ReactImage from "/carousel/react.png";
 import HtmlImage from "/carousel/html.png";
 import CssImage from "/carousel/css.png";
@@ -56,7 +58,62 @@ const Carouselcard = () => {
             </CardDescriptionStyled>
           </CardContainerStyled>
 
-          {/* 2 reactjs */}
+          {/* 2 NodeJs */}
+
+          <CardContainerStyled>
+            <CardTitleStyled>
+              <h2>NodeJs</h2>
+            </CardTitleStyled>
+            <CardImageStyled>
+              <img src={NodeJsImage} alt="Imagem do logo do nodejs" />
+            </CardImageStyled>
+            <CardDescriptionStyled>
+              <h3>O que é nodeJs?</h3>
+              <p>
+                Node.js é uma plataforma de desenvolvimento de software de
+                código aberto que permite a criação de aplicativos de alta
+                escalabilidade e performance em tempo real com JavaScript.
+              </p>
+              <h3>O que sei sobre NodeJs?</h3>
+              <ul>
+                <li>- NPM.</li>
+                <li>- Express.js.</li>
+                <li>- Integração com banco de dados.</li>
+                <li>- Mongoose.</li>
+                <li>- Sequelize.</li>
+              </ul>
+            </CardDescriptionStyled>
+          </CardContainerStyled>
+
+          {/* 3 Python */}
+
+          <CardContainerStyled>
+            <CardTitleStyled>
+              <h2>Python</h2>
+            </CardTitleStyled>
+            <CardImageStyled>
+              <img src={PythonImage} alt="Imagem do logo do python" />
+            </CardImageStyled>
+            <CardDescriptionStyled>
+              <h3>O que é Python?</h3>
+              <p>
+                Python é uma linguagem de programação de alto nível e
+                interpretada, com uma sintaxe simples e clara. A sintaxe do
+                Python é conhecida por ser muito legível e fácil de aprender, o
+                que a torna ideal para iniciantes
+              </p>
+              <h3>O que sei sobre Python?</h3>
+              <ul>
+                <li>- Estruturas de dados.</li>
+                <li>- Estruturas de controle.</li>
+                <li>- Automação e WebScraping.</li>
+                <li>- Pandas, NumPy e Requests.</li>
+                <li>- POO.</li>
+              </ul>
+            </CardDescriptionStyled>
+          </CardContainerStyled>
+
+          {/* 4 reactjs */}
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>React Js</h2>
@@ -65,7 +122,7 @@ const Carouselcard = () => {
               <img src={ReactImage} alt="Imagem do logo do react" />
             </CardImageStyled>
             <CardDescriptionStyled>
-              <h3>O que ReactJs?</h3>
+              <h3>O que é ReactJs?</h3>
               <p>
                 React.js é uma biblioteca JavaScript de código aberto para criar
                 interfaces de usuário. Ele foi criado pelo Facebook e é
@@ -83,13 +140,13 @@ const Carouselcard = () => {
             </CardDescriptionStyled>
           </CardContainerStyled>
 
-          {/* 3 html */}
+          {/* 5 html */}
           <CardContainerStyled>
             <CardTitleStyled>
-              <h2>React Js</h2>
+              <h2>HTML</h2>
             </CardTitleStyled>
             <CardImageStyled>
-              <img src={HtmlImage} alt="Imagem do logo do react" />
+              <img src={HtmlImage} alt="Imagem do logo do html" />
             </CardImageStyled>
             <CardDescriptionStyled>
               <h3>O que é HTML?</h3>
@@ -109,16 +166,16 @@ const Carouselcard = () => {
             </CardDescriptionStyled>
           </CardContainerStyled>
 
-          {/* 4 CSS */}
+          {/* 6 CSS */}
           <CardContainerStyled>
             <CardTitleStyled>
-              <h2>React Js</h2>
+              <h2>CSS</h2>
             </CardTitleStyled>
             <CardImageStyled>
-              <img src={CssImage} alt="Imagem do logo do react" />
+              <img src={CssImage} alt="Imagem do logo do css" />
             </CardImageStyled>
             <CardDescriptionStyled>
-              <h3>O que CSS?</h3>
+              <h3>O que é CSS?</h3>
               <p>
                 CSS é a linguagem de estilo usada para estilizar páginas da web.
                 Ele permite controlar a aparência de elementos HTML, como
