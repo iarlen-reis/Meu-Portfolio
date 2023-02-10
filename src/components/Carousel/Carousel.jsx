@@ -3,6 +3,7 @@ import React from "react";
 import JavaScriptImage from "/carousel/javascript.png";
 import NodeJsImage from "/carousel/nodejs.png";
 import PythonImage from "/carousel/python.png";
+import BancosImage from "/carousel/banco-de-dados.png";
 import ReactImage from "/carousel/react.png";
 import HtmlImage from "/carousel/html.png";
 import CssImage from "/carousel/css.png";
@@ -109,6 +110,31 @@ const Carouselcard = () => {
                 <li>- Automação e WebScraping.</li>
                 <li>- Pandas, NumPy e Requests.</li>
                 <li>- POO.</li>
+              </ul>
+            </CardDescriptionStyled>
+          </CardContainerStyled>
+
+          {/* 3 banco-de-dados */}
+
+          <CardContainerStyled>
+            <CardTitleStyled>
+              <h2>Banco de dados</h2>
+            </CardTitleStyled>
+            <CardImageStyled>
+              <img src={BancosImage} alt="Imagem do logo do python" />
+            </CardImageStyled>
+            <CardDescriptionStyled>
+              <h3>O que é banco de dados?</h3>
+              <p>
+                Um banco de dados é uma coleção organizada de dados que permite
+                armazenar, gerenciar e recuperar informações de maneira
+                eficiente.
+              </p>
+              <h3>Quais bancos de dados sei?</h3>
+              <ul>
+                <li>- Mysql | Sequelize.</li>
+                <li>- Sqlite | Sqlite3.</li>
+                <li>- Mongodb | Atlas | Mongoose.</li>
               </ul>
             </CardDescriptionStyled>
           </CardContainerStyled>
