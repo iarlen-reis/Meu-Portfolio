@@ -13,7 +13,7 @@ export const RowStyled = styled.div`
 
 export const CardContainerStyled = styled.div`
   max-width: 32rem;
-  height: 100%;
+  min-height: 34rem;
 
   margin: 0 auto;
 
