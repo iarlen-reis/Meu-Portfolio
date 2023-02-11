@@ -32,7 +32,7 @@ const Header = () => {
       <ContainerStyled>
         <NavStyled>
           <NavLink to="/" onClick={toogleMenuMobile}>
-            <img src={Logo} width={200} alt="Logo do meu portfolio" />
+            <img src={Logo} width={220} alt="Logo do meu portfolio" />
           </NavLink>
           <UlStyled mobile={mobile}>
             <li>

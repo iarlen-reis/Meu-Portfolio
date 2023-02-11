@@ -27,22 +27,34 @@ export const NavStyled = styled.nav`
 export const UlStyled = styled.ul`
   display: flex;
   align-items: center;
-  column-gap: 0.7rem;
+  column-gap: 1rem;
 
   a {
+    position: relative;
     color: ${Colors.textColorSecundary};
     font-size: ${FontsSizes.fontSmall};
     transition: 0.6s;
 
-    &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      width: 0;
+      height: 0.2rem;
+      transition: all 400ms ease-in-out;
+      background: ${Colors.textColor};
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 1%;
     }
   }
 
   .active {
-    color: ${Colors.headerColor};
-    font-weight: 500;
-    background: ${Colors.textColorSecundary};
-    padding: 0.3rem 0.5rem;
+    color: ${Colors.textColor};
+    font-weight: 800;
   }
 
   @media (max-width: 798px) {
