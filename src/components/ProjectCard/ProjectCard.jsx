@@ -1,9 +1,5 @@
 import React from "react";
 
-import LifeSharedImage from "/projects/image-life-shared.png";
-import FetchGithubImage from "/projects/image-fetch-github.png";
-import contextApiImage from "/projects/image-context-api.png";
-
 import {
   ProjectCardContainerStyled,
   ProjectImageContainer,

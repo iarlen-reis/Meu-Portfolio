@@ -40,5 +40,6 @@ export const ProjectsCardContainerStyled = styled.div`
   flex-wrap: wrap;
 
   gap: 2rem;
+  row-gap: 2.5rem;
   margin-top: 2rem;
 `;
