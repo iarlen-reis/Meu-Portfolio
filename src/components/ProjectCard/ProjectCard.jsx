@@ -11,95 +11,40 @@ import {
   ProjectTechnologyContainer,
   ProjectButtonContainer,
 } from "./style";
-const ProjectCard = () => {
+const ProjectCard = ({
+  Image,
+  Title,
+  Description,
+  Technology,
+  Github,
+  Deploy,
+}) => {
   return (
-    <>
-      {/* 1 life-shared */}
-      <ProjectCardContainerStyled>
-        <ProjectImageContainer>
-          <img src={LifeSharedImage} alt="Imagem do projeto life shared" />
-        </ProjectImageContainer>
-        <ProjectDescriptonContainer>
-          <h2>Life Shared</h2>
-          <p>
-            Life shared é uma aplicação onde o usuário pode se registrar,
-            compartilhar seus momentos preferidos, a plataforma também uma
-            dashboard de gerenciar as postagens.
-          </p>
-        </ProjectDescriptonContainer>
-        <ProjectTechnologyContainer>
-          <h3>Tecnologias</h3>
-          <p>ReactJs, Firebase, ContextAPI</p>
-        </ProjectTechnologyContainer>
-        <ProjectButtonContainer>
-          <a href="https://github.com/iarlen-reis/Life-Shared" target="_blank">
-            Github
-          </a>
-          <a href="https://www.life-shared.iarlenreis.com.br/" target="_blank">
-            Site
-          </a>
-        </ProjectButtonContainer>
-      </ProjectCardContainerStyled>
-
-      {/* 2 Fetch-githbub */}
-
-      <ProjectCardContainerStyled>
-        <ProjectImageContainer>
-          <img src={FetchGithubImage} alt="Imagem do projeto life shared" />
-        </ProjectImageContainer>
-        <ProjectDescriptonContainer>
-          <h2>Fetch Github</h2>
-          <p>
-            Fetch github é uma aplicação que utiliza a API do github para buscar
-            perfis e listar repositórios e futuramente irei adicionar a opção de
-            salvar repositórios.
-          </p>
-        </ProjectDescriptonContainer>
-        <ProjectTechnologyContainer>
-          <h3>Tecnologias</h3>
-          <p>ReactJs, Styled-components, contextAPI</p>
-        </ProjectTechnologyContainer>
-        <ProjectButtonContainer>
-          <a href="https://github.com/iarlen-reis/FetchGitHub" target="_blank">
-            Github
-          </a>
-          <a href="https://www.fetch-github.iarlenreis.com.br/" target="_blank">
-            Site
-          </a>
-        </ProjectButtonContainer>
-      </ProjectCardContainerStyled>
-
-      {/* 3 context-api */}
-
-      <ProjectCardContainerStyled>
-        <ProjectImageContainer>
-          <img src={contextApiImage} alt="Imagem do projeto life shared" />
-        </ProjectImageContainer>
-        <ProjectDescriptonContainer>
-          <h2>ContextApi</h2>
-          <p>
-            ContextAPI foi uma aplicação que desenvolvi quando está aprendendo
-            gerenciamento de estados com ContextAPI e persistencia de dados com
-            localstorage.
-          </p>
-        </ProjectDescriptonContainer>
-        <ProjectTechnologyContainer>
-          <h3>Tecnologias</h3>
-          <p>ReactJs, ContextAPI, Localstorage</p>
-        </ProjectTechnologyContainer>
-        <ProjectButtonContainer>
-          <a
-            href="https://github.com/iarlen-reis/React-ContextAPI-Responsividade"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a href="http://context-api.iarlenreis.com.br/" target="_blank">
-            Site
-          </a>
-        </ProjectButtonContainer>
-      </ProjectCardContainerStyled>
-    </>
+    <ProjectCardContainerStyled>
+      <ProjectImageContainer>
+        <img src={Image} alt={Title} />
+      </ProjectImageContainer>
+      <ProjectDescriptonContainer>
+        <h2>{Title}</h2>
+        <p>{Description}</p>
+      </ProjectDescriptonContainer>
+      <ProjectTechnologyContainer>
+        <h3>Tecnologias</h3>
+        <p>
+          {Technology.map((tech) => (
+            <>{tech} </>
+          ))}
+        </p>
+      </ProjectTechnologyContainer>
+      <ProjectButtonContainer>
+        <a href={Github} target="_blank">
+          Github
+        </a>
+        <a href={Deploy} target="_blank">
+          Site
+        </a>
+      </ProjectButtonContainer>
+    </ProjectCardContainerStyled>
   );
 };
 
