@@ -14,7 +14,7 @@ import {
 
 import { RiMenu3Fill, RiCloseLine } from "react-icons/ri";
 
-import Logo from "/logo-dragon.png";
+import Logo from "/logo-2.png";
 
 const Header = () => {
   const [mobile, setMobile] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
       <ContainerStyled>
         <NavStyled>
           <NavLink to="/" onClick={toogleMenuMobile}>
-            <img src={Logo} width={220} alt="Logo do meu portfolio" />
+            <img src={Logo} width={200} alt="Logo do meu portfolio" />
           </NavLink>
           <UlStyled mobile={mobile}>
             <li>
