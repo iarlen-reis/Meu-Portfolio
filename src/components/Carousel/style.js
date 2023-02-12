@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "../../styles/GlobalStyles";
 
-export const SectionContainerStyled = styled.section`
+export const SectionContainerStyled = styled.div`
   padding-top: 2rem;
   width: 100%;
 `;
@@ -11,7 +11,7 @@ export const RowStyled = styled.div`
   height: 100%;
 `;
 
-export const CardContainerStyled = styled.div`
+export const CardContainerStyled = styled.article`
   max-width: 32rem;
   min-height: 34rem;
 

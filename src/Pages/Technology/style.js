@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Colors, FontFamilly, FontsSizes } from "../../styles/GlobalStyles";
 
-export const TechnologyContainerStyled = styled.section`
+export const TechnologyContainerStyled = styled.main`
   width: 100%;
   min-height: 100vh;
 
