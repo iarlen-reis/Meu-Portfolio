@@ -55,7 +55,7 @@ export const HomeDescriptionStyled = styled.div`
 
   @media (max-width: 798px) {
     order: 1;
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   @media (max-width: 800px) {
