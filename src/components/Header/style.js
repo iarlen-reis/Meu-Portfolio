@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors, FontsSizes } from "../../styles/GlobalStyles";
 
-export const AsideStyled = styled.aside`
+export const HeaderStyled = styled.header`
   background: ${Colors.headerColor};
   border-bottom: 1px solid rgba(61, 61, 61, 0.5);
 `;

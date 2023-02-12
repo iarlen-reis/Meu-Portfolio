@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { ContainerStyled } from "../../styles/GlobalStyles";
 
 import {
-  AsideStyled,
+  HeaderStyled,
   NavStyled,
   UlStyled,
   MobileMenuContainerStyled,
@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <AsideStyled>
+    <HeaderStyled>
       <ContainerStyled>
         <NavStyled>
           <NavLink to="/" onClick={toogleMenuMobile}>
@@ -65,7 +65,7 @@ const Header = () => {
           </MobileMenuContainerStyled>
         </NavStyled>
       </ContainerStyled>
-    </AsideStyled>
+    </HeaderStyled>
   );
 };
 
