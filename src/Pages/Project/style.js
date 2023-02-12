@@ -11,25 +11,12 @@ export const ProjectStyledContainer = styled.div`
   background: ${Colors.primaryColor};
 `;
 
-export const ProjectDecriptionStyled = styled.div`
+export const ProjectDecriptionStyled = styled.h1`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-
   text-align: center;
 
-  padding-top: 2rem;
-
-  row-gap: 0.6rem;
-  h1 {
-    font-family: ${FontFamilly.fontItim};
-    font-size: ${FontsSizes.fontBig};
-  }
-
-  p {
-    font-size: ${FontsSizes.fontExtraSmall};
-    font-style: italic;
-  }
+  font-family: ${FontFamilly.fontItim};
+  font-size: ${FontsSizes.fontBig};
 `;
 
 export const ProjectsCardContainerStyled = styled.div`

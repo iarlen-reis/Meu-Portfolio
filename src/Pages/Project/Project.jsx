@@ -20,10 +20,7 @@ const Project = () => {
   return (
     <ProjectStyledContainer>
       <ContainerStyled>
-        <ProjectDecriptionStyled>
-          <h1>Meus projetos</h1>
-          <p>Esses são alguns dos meus projetos!</p>
-        </ProjectDecriptionStyled>
+        <ProjectDecriptionStyled>Meus projetos</ProjectDecriptionStyled>
         <ProjectsCardContainerStyled>
           {/* 1 Life Shared */}
           <ProjectCard
