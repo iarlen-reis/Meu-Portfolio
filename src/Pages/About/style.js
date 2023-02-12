@@ -30,9 +30,6 @@ export const AboutHeaderContainer = styled.h1`
   @media (max-width: 440px) {
     font-size: ${FontsSizes.fontRegular};
   }
-  @media (max-width: 403px) {
-    text-align: center;
-  }
 
   @media (max-width: 357px) {
     font-size: ${FontsSizes.fontSmallPlus};
@@ -67,6 +64,23 @@ export const AboutDescriptionAdditionalContainer = styled.div`
   h2 {
     font-family: ${FontFamilly.fontItim};
     font-size: ${FontsSizes.fontRegularPlus};
+  }
+
+  @media (max-width: 440px) {
+    h2 {
+      font-size: ${FontsSizes.fontRegular};
+    }
+  }
+  @media (max-width: 357px) {
+    h2 {
+      font-size: ${FontsSizes.fontSmallPlus};
+    }
+  }
+
+  @media (max-width: 292px) {
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 `;
 
