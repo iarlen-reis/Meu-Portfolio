@@ -20,7 +20,9 @@ const Home = () => {
       <ContainerStyled>
         <HomeContentStyled>
           <HomeDescriptionStyled>
-            Olá, Eu sou <span>Iarlen Reis.</span>
+            <p>
+              Olá, Eu sou <span>Iarlen Reis.</span>
+            </p>
             <HomeEffectTyping>desenvolvedor front-end</HomeEffectTyping>
             <HomeContactContainer>
               <a href="https://github.com/iarlen-reis" target="_blank">

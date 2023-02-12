@@ -28,16 +28,17 @@ export const FooterContentStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 0.5rem 0;
 `;
 
 export const FooterContactContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-
   row-gap: 0.5rem;
 
   a {
+    width: 100%;
     color: ${Colors.textColorSecundary};
 
     transition: 0.7s;

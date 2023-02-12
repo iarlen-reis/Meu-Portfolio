@@ -24,17 +24,11 @@ const Footer = () => {
             >
               Linkedin
             </a>
-            <a
-              href="https://pt.vecteezy.com/vetor-gratis/projeto"
-              target="_blank"
-            >
-              Projeto Vetores por Vecteezy
-            </a>
           </FooterContactContainer>
           <FooterInfoContainer>
             <small>
-              <FooterSimbolContainer>&#169;</FooterSimbolContainer> Todos os
-              direitos reservados.
+              <FooterSimbolContainer>&#169;</FooterSimbolContainer> Iarlen Reis
+              2023
             </small>
           </FooterInfoContainer>
         </FooterContentStyled>

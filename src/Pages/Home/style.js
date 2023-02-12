@@ -25,19 +25,21 @@ export const HomeContentStyled = styled.section`
 
   @media (max-width: 798px) {
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-left: 0;
   }
 `;
 
 export const HomeDescriptionStyled = styled.div`
-  font-size: ${FontsSizes.fontBig};
-  font-family: ${FontFamilly.fontItim};
-
   align-self: center;
   font-style: italic;
 
-  color: ${Colors.textColorSecundary};
+  p:nth-child(1) {
+    font-size: ${FontsSizes.fontBig};
+    font-family: ${FontFamilly.fontItim};
+
+    color: ${Colors.textColorSecundary};
+  }
 
   span {
     display: block;
@@ -68,8 +70,6 @@ export const HomeDescriptionStyled = styled.div`
 
     text-align: start;
     font-size: ${FontsSizes.fontRegular};
-
-    line-height: 2.5rem;
 
     span {
       font-size: ${FontsSizes.fontBig};
@@ -102,6 +102,7 @@ export const HomeEffectTyping = styled.p`
 
   text-transform: uppercase;
   padding-right: 0.3rem;
+  margin-bottom: 0.8rem;
 
   color: ${Colors.textColor};
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -128,6 +129,8 @@ export const HomeEffectTyping = styled.p`
 
   @media (max-width: 530px) {
     width: 220px;
+    margin-top: 0.5rem;
+
     @keyframes textTypingEffect {
       from {
         width: 0;
@@ -136,14 +139,13 @@ export const HomeEffectTyping = styled.p`
         width: 220px;
       }
     }
-    margin: 0.5rem 0px;
     font-size: ${FontsSizes.fontSmallRegular};
   }
 `;
 
 export const HomeContactContainer = styled.div`
   display: flex;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
   width: 200px;
 
   svg {
@@ -159,6 +161,10 @@ export const HomeContactContainer = styled.div`
 
   @media (max-width: 798px) {
     order: 2;
+  }
+
+  @media (max-width: 530px) {
+    margin-top: 0.5rem;
   }
 `;
 
