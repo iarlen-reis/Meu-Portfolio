@@ -28,10 +28,7 @@ const About = () => {
   return (
     <AboutStyledContainer>
       <ContainerStyled>
-        <AboutHeaderContainer>
-          <h1>Informações</h1>
-          <p>Esse é um breve resumo sobre mim.</p>
-        </AboutHeaderContainer>
+        <AboutHeaderContainer>Informações</AboutHeaderContainer>
         <AboutDescriptionContainer>
           <p>
             Olá, meu nome é <strong>Iarlen Santos Reis</strong>, tenho 21 anos e

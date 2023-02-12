@@ -2,67 +2,44 @@ import styled from "styled-components";
 
 import { Colors, FontsSizes, FontFamilly } from "../../styles/GlobalStyles";
 
-export const AboutStyledContainer = styled.section`
+export const AboutStyledContainer = styled.main`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   padding-left: 2rem;
   padding-top: 2rem;
+  padding-bottom: 4rem;
 
   color: ${Colors.textColorSecundary};
   background: ${Colors.primaryColor};
 
   @media (max-width: 798px) {
-    height: 100%;
     padding-left: 0;
   }
 `;
 
-export const AboutHeaderContainer = styled.div`
+export const AboutHeaderContainer = styled.h1`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
-
   text-align: start;
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 
-  h1 {
-    font-family: ${FontFamilly.fontItim};
-    font-size: ${FontsSizes.fontRegularPlus};
-  }
-
-  p {
-    font-style: italic;
-    font-size: ${FontsSizes.fontExtraSmall};
-  }
+  font-family: ${FontFamilly.fontItim};
+  font-size: ${FontsSizes.fontBig};
 
   @media (max-width: 440px) {
-    h1 {
-      font-size: ${FontsSizes.fontRegular};
-    }
+    font-size: ${FontsSizes.fontRegular};
+  }
+  @media (max-width: 403px) {
+    text-align: center;
+  }
 
-    @media (max-width: 403px) {
-      h1 {
-        text-align: center;
-      }
-      p {
-        text-align: center;
-      }
-    }
+  @media (max-width: 357px) {
+    font-size: ${FontsSizes.fontSmallPlus};
+  }
 
-    @media (max-width: 357px) {
-      h1 {
-        font-size: ${FontsSizes.fontSmallPlus};
-      }
-    }
-
-    @media (max-width: 292px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-    }
+  @media (max-width: 292px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -89,6 +66,7 @@ export const AboutDescriptionAdditionalContainer = styled.div`
 
   h2 {
     font-family: ${FontFamilly.fontItim};
+    font-size: ${FontsSizes.fontRegularPlus};
   }
 `;
 
