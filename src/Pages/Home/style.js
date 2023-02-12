@@ -2,27 +2,26 @@ import styled from "styled-components";
 
 import { Colors, FontsSizes, FontFamilly } from "../../styles/GlobalStyles";
 
-export const HomeStyledContainer = styled.section`
+export const HomeStyledContainer = styled.main`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: ${Colors.primaryColor};
 
-  padding-left: 2rem;
+  padding-bottom: 4rem;
 
   @media (max-width: 798px) {
     padding-left: 0;
   }
 `;
 
-export const HomeContentStyled = styled.div`
+export const HomeContentStyled = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
 
   column-gap: 2rem;
-  padding-top: 3rem;
-  padding-left: 3rem;
+  padding-top: 2rem;
 
   @media (max-width: 798px) {
     flex-direction: column;
@@ -54,7 +53,7 @@ export const HomeDescriptionStyled = styled.div`
 
   @media (max-width: 798px) {
     order: 1;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   @media (max-width: 800px) {
@@ -78,7 +77,7 @@ export const HomeDescriptionStyled = styled.div`
   }
 `;
 
-export const HomeEffectTyping = styled.div`
+export const HomeEffectTyping = styled.p`
   @keyframes cursorEffect {
     from {
       border-right-color: rgba(255, 255, 255, 0.75);
