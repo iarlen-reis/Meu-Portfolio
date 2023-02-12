@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors, FontFamilly, FontsSizes } from "../../styles/GlobalStyles";
 
-export const ProjectCardContainerStyled = styled.div`
+export const ProjectCardContainerStyled = styled.article`
   width: 20rem;
   min-height: 30rem;
 
@@ -25,15 +25,28 @@ export const ProjectImageContainer = styled.div`
   background-position: center;
   background-size: cover;
 
+  overflow: hidden;
+
   img {
     max-width: 100%;
     border: 1px solid ${Colors.headerColor};
     border-radius: 4px;
+    object-fit: cover;
 
     transition: 0.5s;
 
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
     &:hover {
+      max-width: 100%;
       transform: scale(1.5);
+
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
 
