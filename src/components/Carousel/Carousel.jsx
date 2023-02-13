@@ -3,7 +3,6 @@ import React from "react";
 import JavaScriptImage from "/carousel/javascript.png";
 import NodeJsImage from "/carousel/nodejs.png";
 import PythonImage from "/carousel/python.png";
-import BancosImage from "/carousel/banco-de-dados.png";
 import ReactImage from "/carousel/react.png";
 import HtmlImage from "/carousel/html.png";
 import CssImage from "/carousel/css.png";
@@ -114,32 +113,7 @@ const Carouselcard = () => {
             </CardDescriptionStyled>
           </CardContainerStyled>
 
-          {/* 3 banco-de-dados */}
-
-          <CardContainerStyled>
-            <CardTitleStyled>
-              <h2>Banco de dados</h2>
-            </CardTitleStyled>
-            <CardImageStyled>
-              <img src={BancosImage} alt="Imagem do logo do python" />
-            </CardImageStyled>
-            <CardDescriptionStyled>
-              <h3>O que é banco de dados?</h3>
-              <p>
-                Um banco de dados é uma coleção organizada de dados que permite
-                armazenar, gerenciar e recuperar informações de maneira
-                eficiente.
-              </p>
-              <h3>Quais bancos de dados sei?</h3>
-              <ul>
-                <li>- Mysql | Sequelize.</li>
-                <li>- Sqlite | Sqlite3.</li>
-                <li>- Mongodb | Atlas | Mongoose.</li>
-              </ul>
-            </CardDescriptionStyled>
-          </CardContainerStyled>
-
-          {/* 4 reactjs */}
+          {/* 3 reactjs */}
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>React Js</h2>
@@ -157,7 +131,7 @@ const Carouselcard = () => {
               </p>
               <h3>O que sei sobre ReactJs?</h3>
               <ul>
-                <li>- Componetização.</li>
+                <li>- Componentes.</li>
                 <li>- Estado e Props.</li>
                 <li>- Hooks.</li>
                 <li>- Gerenciamento de estado.</li>
@@ -166,7 +140,7 @@ const Carouselcard = () => {
             </CardDescriptionStyled>
           </CardContainerStyled>
 
-          {/* 5 html */}
+          {/* 4 html */}
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>HTML</h2>
@@ -192,7 +166,7 @@ const Carouselcard = () => {
             </CardDescriptionStyled>
           </CardContainerStyled>
 
-          {/* 6 CSS */}
+          {/* 5 CSS */}
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>CSS</h2>
