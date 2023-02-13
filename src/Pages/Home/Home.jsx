@@ -25,18 +25,24 @@ const Home = () => {
             </p>
             <HomeEffectTyping>desenvolvedor front-end</HomeEffectTyping>
             <HomeContactContainer>
-              <a href="https://github.com/iarlen-reis" target="_blank">
+              <a
+                href="https://github.com/iarlen-reis"
+                target="_blank"
+                title="Meu perfil no Github"
+              >
                 <BsGithub />
               </a>
               <a
                 href="https://www.linkedin.com/in/iarlen-santos-reis-480119247/"
                 target="_blank"
+                title="Meu perfil no linkedin"
               >
                 <BsLinkedin />
               </a>
               <a
                 href="/home/CurriculoIarlenSantosReis.pdf"
                 download="Currículo Iarlen Santos Reis"
+                title="Download do meu currículo em formato de pdf"
               >
                 <BsDownload />
               </a>

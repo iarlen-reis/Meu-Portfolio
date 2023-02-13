@@ -22,10 +22,10 @@ const ProjectCard = ({ Image, Title, Description, Github, Deploy }) => {
         <p>{Description}</p>
       </ProjectDescriptonContainer>
       <ProjectButtonContainer>
-        <a href={Github} target="_blank">
+        <a href={Github} target="_blank" title="Repositório no Github">
           <TbBrandGithub size={20} /> Github
         </a>
-        <a href={Deploy} target="_blank">
+        <a href={Deploy} target="_blank" title="Aplicação em deploy">
           Deploy
           <SlRocket size={20} />
         </a>
