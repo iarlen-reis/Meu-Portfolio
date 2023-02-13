@@ -7,14 +7,11 @@ import {
   ProjectTechnologyContainer,
   ProjectButtonContainer,
 } from "./style";
-const ProjectCard = ({
-  Image,
-  Title,
-  Description,
-  Technology,
-  Github,
-  Deploy,
-}) => {
+
+import { TbBrandGithub } from "react-icons/tb";
+import { SlRocket } from "react-icons/sl";
+
+const ProjectCard = ({ Image, Title, Description, Github, Deploy }) => {
   return (
     <ProjectCardContainerStyled>
       <ProjectImageContainer>
@@ -24,20 +21,13 @@ const ProjectCard = ({
         <h2>{Title}</h2>
         <p>{Description}</p>
       </ProjectDescriptonContainer>
-      <ProjectTechnologyContainer>
-        <h3>Tecnologias</h3>
-        <p>
-          {Technology.map((tech) => (
-            <>{tech} </>
-          ))}
-        </p>
-      </ProjectTechnologyContainer>
       <ProjectButtonContainer>
         <a href={Github} target="_blank">
-          Github
+          <TbBrandGithub size={20} /> Github
         </a>
         <a href={Deploy} target="_blank">
-          Site
+          Deploy
+          <SlRocket size={20} />
         </a>
       </ProjectButtonContainer>
     </ProjectCardContainerStyled>

@@ -29,7 +29,6 @@ const Project = () => {
             Description="Life shared é uma aplicação onde o usuário pode se registrar,
             compartilhar seus momentos preferidos, a plataforma também uma
             dashboard de gerenciar as postagens."
-            Technology={["ReactJs", "Firebase", "ContextAPI"]}
             Github="https://github.com/iarlen-reis/Life-Shared"
             Deploy="https://www.life-shared.iarlenreis.com.br/"
           />
@@ -41,7 +40,6 @@ const Project = () => {
             Description="FindRepository é uma aplicação que utiliza a API do github para buscar
             perfis e listar repositórios e futuramente irei adicionar a opção de
             salvar repositórios."
-            Technology={["ReactJs", "Styled-components", "ContextAPI"]}
             Github="https://github.com/iarlen-reis/FetchGitHub"
             Deploy="https://www.fetch-github.iarlenreis.com.br/"
           />
@@ -52,7 +50,6 @@ const Project = () => {
             Title="Agenda"
             Description="Esse foi um projeto que desenvolvi enquanto estava aprendendo 
             express.js, ele permite que o usuário criei uma conta e faça gerenciamento de contatos."
-            Technology={["Express.js", "MongoDB", "Handlebars", "NodeJs"]}
             Github="https://github.com/iarlen-reis/Agenda"
             Deploy="https://agenda.iarlenreis.com.br/"
           />
@@ -63,7 +60,6 @@ const Project = () => {
             Title="Secret Word"
             Description="Foi um projeto desenvolvido quando estava apredendo ReactJs, 
             ele é um jogo classico de Forca, onde aprendi props do reactJs."
-            Technology={["ReactJs"]}
             Github="https://github.com/iarlen-reis/SecretWord"
             Deploy="https://secret-word.iarlenreis.com.br/"
           />
@@ -75,7 +71,6 @@ const Project = () => {
             Description="AuthContext foi uma aplicação que desenvolvi quando estava treinando
             gerenciamento de estados com ContextAPI, persistência de dados com
             localstorage."
-            Technology={["ReactJs", "Localstorage", "ContextAPI"]}
             Github="https://github.com/iarlen-reis/React-ContextAPI-Responsividade"
             Deploy="http://context-api.iarlenreis.com.br/"
           />
@@ -85,9 +80,7 @@ const Project = () => {
             Image={TodoListImage}
             Title="TodoList"
             Description="TodoList foi um projeto que fiz quando estava aprendendo reactJs,
-            ele foi feito utilizando react usando classes ao invés de componentes como é feito
-            hoje em dia."
-            Technology={["ReactJs", "LocalStorage"]}
+            ele foi feito utilizando react usando classes ao invés de componentes."
             Github="https://github.com/iarlen-reis/TodoList-React"
             Deploy="https://todolist-react.iarlenreis.com.br/"
           />

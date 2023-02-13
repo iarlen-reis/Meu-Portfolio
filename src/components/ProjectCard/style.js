@@ -2,19 +2,20 @@ import styled from "styled-components";
 import { Colors, FontFamilly, FontsSizes } from "../../styles/GlobalStyles";
 
 export const ProjectCardContainerStyled = styled.article`
-  width: 20rem;
-  min-height: 30rem;
+  width: 32rem;
+  min-height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   row-gap: 0.4rem;
+  padding-bottom: 0.4rem;
 
-  padding: 0.9rem 0.8rem;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  border-radius: 6px;
 
-  border: 1px solid ${Colors.textColorSecundary};
-  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   color: ${Colors.textColorSecundary};
   background: ${Colors.tertiaryColor};
@@ -22,40 +23,15 @@ export const ProjectCardContainerStyled = styled.article`
 
 export const ProjectImageContainer = styled.div`
   width: 100%;
-  background-position: center;
-  background-size: cover;
+
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 
   overflow: hidden;
 
   img {
-    max-width: 100%;
-    border: 1px solid ${Colors.headerColor};
-    border-radius: 4px;
-    object-fit: cover;
-
-    transition: 0.5s;
-
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-
-    &:hover {
-      max-width: 100%;
-      transform: scale(1.5);
-
-      -moz-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-  }
-
-  @media (max-width: 798px) {
-    img {
-      &:hover {
-        transform: none;
-      }
-    }
+    width: 100%;
+    border-bottom: 1px solid rgba(61, 61, 61, 0.5);
   }
 `;
 
@@ -66,8 +42,9 @@ export const ProjectDescriptonContainer = styled.div`
   flex-direction: column;
   row-gap: 0.6rem;
 
-  text-align: center;
+  text-align: start;
 
+  padding: 0 0.6rem;
   margin-bottom: 0.7rem;
 
   h2 {
@@ -112,28 +89,33 @@ export const ProjectButtonContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0.6rem 0.6rem;
 
   column-gap: 1rem;
 
+  border-top: 1px solid rgba(61, 61, 61, 0.5);
+
   a {
-    width: 30%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    column-gap: 0.5rem;
+
     font-weight: 500;
 
-    padding: 0.4rem 0.6rem;
+    padding: 0.5rem 0.6rem;
 
     border-radius: 4px;
 
     color: ${Colors.textColorSecundary};
-    background: ${Colors.headerColor};
+    background: ${Colors.secundaryColor};
 
-    transition: 0.5s;
+    transition: 0.5s ease-in;
 
     &:hover {
-      background: ${Colors.secundaryColor};
+      background: ${Colors.headerColor};
     }
   }
 `;
