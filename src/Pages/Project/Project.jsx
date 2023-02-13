@@ -27,8 +27,8 @@ const Project = () => {
             Image={LifeSharedImage}
             Title="Life Shared"
             Description="Life shared é uma aplicação onde o usuário pode se registrar,
-            compartilhar seus momentos preferidos, a plataforma também uma
-            dashboard de gerenciar as postagens."
+            compartilhar seus momentos preferidos, a plataforma também tem uma
+            dashboard para o usuário gerenciar as postagens."
             Github="https://github.com/iarlen-reis/Life-Shared"
             Deploy="https://www.life-shared.iarlenreis.com.br/"
           />
@@ -38,7 +38,7 @@ const Project = () => {
             Image={FetchGithubImage}
             Title="FindRepository"
             Description="FindRepository é uma aplicação que utiliza a API do github para buscar
-            perfis e listar repositórios e futuramente irei adicionar a opção de
+            perfis, listar repositórios e futuramente irei adicionar a opção de
             salvar repositórios."
             Github="https://github.com/iarlen-reis/FetchGitHub"
             Deploy="https://www.fetch-github.iarlenreis.com.br/"
@@ -69,7 +69,7 @@ const Project = () => {
             Image={contextApiImage}
             Title="AuthContext"
             Description="AuthContext foi uma aplicação que desenvolvi quando estava treinando
-            gerenciamento de estados com ContextAPI, persistência de dados com
+            gerenciamento de estados com ContextAPI e persistência de dados com
             localstorage."
             Github="https://github.com/iarlen-reis/React-ContextAPI-Responsividade"
             Deploy="http://context-api.iarlenreis.com.br/"

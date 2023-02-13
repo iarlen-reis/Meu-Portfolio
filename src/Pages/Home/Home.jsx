@@ -10,7 +10,7 @@ import {
   HomeContactContainer,
 } from "./style";
 
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsDownload } from "react-icons/bs";
 
 import devoloper from "/home/profile.png";
 
@@ -33,6 +33,12 @@ const Home = () => {
                 target="_blank"
               >
                 <BsLinkedin />
+              </a>
+              <a
+                href="/home/CurriculoIarlenSantosReis.pdf"
+                download="Currículo Iarlen Santos Reis"
+              >
+                <BsDownload />
               </a>
             </HomeContactContainer>
           </HomeDescriptionStyled>

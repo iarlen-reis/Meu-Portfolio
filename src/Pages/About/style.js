@@ -66,12 +66,13 @@ export const AboutDescriptionAdditionalContainer = styled.div`
     font-size: ${FontsSizes.fontRegularPlus};
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 610px) {
     h2 {
-      font-size: ${FontsSizes.fontRegular};
+      font-size: ${FontsSizes.fontRegularPlus};
     }
   }
-  @media (max-width: 357px) {
+
+  @media (max-width: 500px) {
     h2 {
       font-size: ${FontsSizes.fontSmallPlus};
     }
