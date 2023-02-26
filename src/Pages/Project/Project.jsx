@@ -11,7 +11,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 import LifeSharedImage from "/projects/image-life-shared.png";
 import FetchGithubImage from "/projects/image-fetch-github.png";
-import contextApiImage from "/projects/image-context-api.png";
+import ReactGramImage from "/projects/image-reactgram.png";
 import AgendaImage from "/projects/image-agenda.png";
 import TodoListImage from "/projects/image-todolist.png";
 import SecretWordImage from "/projects/image-secretWord.png";
@@ -33,7 +33,17 @@ const Project = () => {
             Deploy="https://www.life-shared.iarlenreis.com.br/"
           />
 
-          {/* 2 FindRepository */}
+          {/* 2 ReactGram */}
+          <ProjectCard
+            Image={ReactGramImage}
+            Title="ReactGram"
+            Description="ReatGram é um clone do instagram, utilizando reactJs. Ela possui as funcionalidades
+            de login, cadastro,  visualizar perfil, publicar imagens, curtir e comentar."
+            Github="https://github.com/iarlen-reis/ReactGram-frontend"
+            Deploy="https://reactgram.iarlenreis.com.br/"
+          />
+
+          {/* 3 FindRepository */}
           <ProjectCard
             Image={FetchGithubImage}
             Title="FindRepository"
@@ -44,7 +54,7 @@ const Project = () => {
             Deploy="https://www.fetch-github.iarlenreis.com.br/"
           />
 
-          {/* 3 Agenda */}
+          {/* 4 Agenda */}
           <ProjectCard
             Image={AgendaImage}
             Title="Agenda"
@@ -54,7 +64,7 @@ const Project = () => {
             Deploy="https://agenda.iarlenreis.com.br/"
           />
 
-          {/* 4 SecretWord */}
+          {/* 5 SecretWord */}
           <ProjectCard
             Image={SecretWordImage}
             Title="Secret Word"
@@ -64,18 +74,7 @@ const Project = () => {
             Deploy="https://secret-word.iarlenreis.com.br/"
           />
 
-          {/* 5 AuthContext */}
-          <ProjectCard
-            Image={contextApiImage}
-            Title="AuthContext"
-            Description="AuthContext foi uma aplicação que desenvolvi quando estava treinando
-            gerenciamento de estados com ContextAPI e persistência de dados com
-            localstorage."
-            Github="https://github.com/iarlen-reis/React-ContextAPI-Responsividade"
-            Deploy="http://context-api.iarlenreis.com.br/"
-          />
-
-          {/* 6 Agenda */}
+          {/* 6 TodoList */}
           <ProjectCard
             Image={TodoListImage}
             Title="TodoList"
