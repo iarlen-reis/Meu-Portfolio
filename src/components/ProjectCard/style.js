@@ -55,6 +55,8 @@ export const ProjectDescriptonContainer = styled.div`
   p {
     text-align: start;
   }
+
+
 `;
 
 export const ProjectTechnologyContainer = styled.div`
@@ -84,6 +86,28 @@ export const ProjectTechnologyContainer = styled.div`
     flex-wrap: wrap;
   }
 `;
+
+export const ProjectTechContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+
+  span {
+    font-size: 1rem;
+
+    padding: 0.2rem 0.4rem;
+    
+    border-radius: 4px;
+    font-weight: bold;
+
+    color: ${Colors.textColorSecundary};
+    background: ${Colors.primaryColor};
+  }
+`
 
 export const ProjectButtonContainer = styled.div`
   width: 100%;

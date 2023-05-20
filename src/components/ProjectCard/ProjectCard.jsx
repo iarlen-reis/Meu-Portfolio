@@ -4,14 +4,14 @@ import {
   ProjectCardContainerStyled,
   ProjectImageContainer,
   ProjectDescriptonContainer,
-  ProjectTechnologyContainer,
+  ProjectTechContainer,
   ProjectButtonContainer,
 } from "./style";
 
 import { TbBrandGithub } from "react-icons/tb";
 import { SlRocket } from "react-icons/sl";
 
-const ProjectCard = ({ Image, Title, Description, Github, Deploy }) => {
+const ProjectCard = ({ Image, Title, Description, Github, Deploy, techs }) => {
   return (
     <ProjectCardContainerStyled>
       <ProjectImageContainer>
@@ -21,6 +21,9 @@ const ProjectCard = ({ Image, Title, Description, Github, Deploy }) => {
         <h2>{Title}</h2>
         <p>{Description}</p>
       </ProjectDescriptonContainer>
+      <ProjectTechContainer>
+          {techs && techs.map(tech => <span key={tech}>{tech}</span>)}
+      </ProjectTechContainer>
       <ProjectButtonContainer>
         <a href={Github} target="_blank" title="Repositório no Github">
           <TbBrandGithub size={20} /> Github
