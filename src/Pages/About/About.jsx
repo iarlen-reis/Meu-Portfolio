@@ -77,10 +77,13 @@ const About = () => {
             {techs && (
               <TextAdditionalContainer>
                 <p>
-                  Pretendo aprender mais sobre back-end, logo inicialmente
-                  pretendo dominar completamente o nodeJs, por ser semelhante ao
-                  javascript. Já na área de front-end, pretendo aprender mais
-                  sobre o reactJs e progredir para o nextJs.
+                  - Atualmente estou me aprofundando mais no ecossistema do React e como a
+                  nova documentação recomenda a utilização de um framework, estou migrando para o NextJs.
+                </p>
+                <p>
+                  - Já em relação ao futuro, pretendo me aprofundar mais em react native,
+                  para desenvolvimento de aplicações mobile. E no back-and aprender algum framework,
+                  também no ecossistema do node, como nestJs ou um micro-framework, como o fastify.
                 </p>
               </TextAdditionalContainer>
             )}
