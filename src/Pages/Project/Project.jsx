@@ -11,18 +11,40 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 import LifeSharedImage from "/projects/image-life-shared.png";
 import FetchGithubImage from "/projects/image-fetch-github.png";
-import ReactGramImage from "/projects/image-reactgram.png";
-import AgendaImage from "/projects/image-agenda.png";
-import TodoListImage from "/projects/image-todolist.png";
-import SecretWordImage from "/projects/image-secretWord.png";
+import SearchCityImage from "/projects/image-search-city.png";
+import RickAndMortyImage from "/projects/image-rick-and-morty.png";
+import BarberShopImage from "/projects/image-barbershop.png";
 
 const Project = () => {
   return (
     <ProjectStyledContainer>
       <ContainerStyled>
-        <ProjectDecriptionStyled>Meus projetos</ProjectDecriptionStyled>
+        <ProjectDecriptionStyled>
+          <h1>Meus projetos</h1>
+          <p>Esses são meus principais projetos.</p>
+        </ProjectDecriptionStyled>
         <ProjectsCardContainerStyled>
-          {/* 1 Life Shared */}
+          {/* BarberShop */}
+          <ProjectCard
+            Image={BarberShopImage}
+            Title="BarberShop"
+            Description="BarberShop é uma aplicação para gerenciamento de barbearia,
+            ela possui autenticação e integração com Google Firebase."
+            Github="https://github.com/iarlen-reis/BarberShop"
+            Deploy="https://barbershop.iarlenreis.com.br/"
+            techs={["React", "Typescript", "Styled-components", "Firebase"]}
+          />
+          {/* RickAndMorty */}
+          <ProjectCard
+            Image={RickAndMortyImage}
+            Title="RickAndMorty"
+            Description="RickAndMory é uma aplicação que utiliza a API do RickAndMortyAPI
+            para encontrar informações sobre os personagens."
+            Github="https://github.com/iarlen-reis/RickAndMorty"
+            Deploy="https://rick-and-morty.iarlenreis.com.br/"
+            techs={["React", "Typescript", "Styled-components", "Axios"]}
+          />
+          {/* Life Shared */}
           <ProjectCard
             Image={LifeSharedImage}
             Title="Life Shared"
@@ -31,19 +53,19 @@ const Project = () => {
             dashboard para o usuário gerenciar as postagens."
             Github="https://github.com/iarlen-reis/Life-Shared"
             Deploy="https://www.life-shared.iarlenreis.com.br/"
+            techs={["React", "Firebase"]}
           />
-
-          {/* 2 ReactGram */}
+          {/* SearchCity */}
           <ProjectCard
-            Image={ReactGramImage}
-            Title="ReactGram"
-            Description="ReatGram é um clone do instagram, utilizando reactJs. Ela possui as funcionalidades
-            de login, cadastro,  visualizar perfil, publicar imagens, curtir e comentar."
-            Github="https://github.com/iarlen-reis/ReactGram-frontend"
-            Deploy="https://reactgram.iarlenreis.com.br/"
+            Image={SearchCityImage}
+            Title="SearchCity"
+            Description="SearchCity é uma aplicação front-end, que utiliza as APIs
+            do IBGE para encontrar informações sobre cidades do Brasil."
+            Github="https://github.com/iarlen-reis/SearchCity"
+            Deploy="https://search-city.iarlenreis.com.br/"
+            techs={["React", "Typescript", "Styled-components", "Axios"]}
           />
-
-          {/* 3 FindRepository */}
+          {/* FindRepository */}
           <ProjectCard
             Image={FetchGithubImage}
             Title="FindRepository"
@@ -52,37 +74,11 @@ const Project = () => {
             salvar repositórios."
             Github="https://github.com/iarlen-reis/FetchGitHub"
             Deploy="https://www.fetch-github.iarlenreis.com.br/"
+            techs={["React", "Styled-components", "Axios"]}
+            
           />
 
-          {/* 4 Agenda */}
-          <ProjectCard
-            Image={AgendaImage}
-            Title="Agenda"
-            Description="Esse foi um projeto que desenvolvi enquanto estava aprendendo 
-            express.js, ele permite que o usuário criei uma conta e faça gerenciamento de contatos."
-            Github="https://github.com/iarlen-reis/Agenda"
-            Deploy="https://agenda.iarlenreis.com.br/"
-          />
 
-          {/* 5 SecretWord */}
-          <ProjectCard
-            Image={SecretWordImage}
-            Title="Secret Word"
-            Description="Foi um projeto desenvolvido quando estava apredendo ReactJs, 
-            ele é um jogo classico de Forca, onde aprendi props do reactJs."
-            Github="https://github.com/iarlen-reis/SecretWord"
-            Deploy="https://secret-word.iarlenreis.com.br/"
-          />
-
-          {/* 6 TodoList */}
-          <ProjectCard
-            Image={TodoListImage}
-            Title="TodoList"
-            Description="TodoList foi um projeto que fiz quando estava aprendendo reactJs,
-            ele foi feito utilizando react usando classes ao invés de componentes."
-            Github="https://github.com/iarlen-reis/TodoList-React"
-            Deploy="https://todolist-react.iarlenreis.com.br/"
-          />
         </ProjectsCardContainerStyled>
       </ContainerStyled>
     </ProjectStyledContainer>
