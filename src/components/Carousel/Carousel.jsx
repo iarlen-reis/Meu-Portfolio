@@ -30,7 +30,6 @@ const Carouselcard = () => {
       <RowStyled>
         <Carousel breakPoints={breakPoints} showArrows={false}>
           {/* 1 javascript */}
-
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>JavaScript</h2>
@@ -49,17 +48,16 @@ const Carouselcard = () => {
               <h3>O que sei sobre javaScript?</h3>
               <ul>
                 <li>- Tipos de dados.</li>
-                <li>- Operações lógicas.</li>
                 <li>- Estruturas de controle.</li>
                 <li>- Manipulação de DOM.</li>
                 <li>- Arrays e objetos.</li>
                 <li>- Funções e classes.</li>
+                <li>- TypeScript</li>
               </ul>
             </CardDescriptionStyled>
           </CardContainerStyled>
 
           {/* 2 NodeJs */}
-
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>NodeJs</h2>
@@ -79,14 +77,13 @@ const Carouselcard = () => {
                 <li>- NPM.</li>
                 <li>- Express.js.</li>
                 <li>- Integração com banco de dados.</li>
-                <li>- Mongoose.</li>
+                <li>- PrismaORM.</li>
                 <li>- Sequelize.</li>
               </ul>
             </CardDescriptionStyled>
           </CardContainerStyled>
 
           {/* 3 Python */}
-
           <CardContainerStyled>
             <CardTitleStyled>
               <h2>Python</h2>
@@ -107,7 +104,6 @@ const Carouselcard = () => {
                 <li>- Estruturas de dados.</li>
                 <li>- Estruturas de controle.</li>
                 <li>- Automação e WebScraping.</li>
-                <li>- Pandas, NumPy e Requests.</li>
                 <li>- POO.</li>
               </ul>
             </CardDescriptionStyled>
@@ -133,9 +129,9 @@ const Carouselcard = () => {
               <ul>
                 <li>- Componentes.</li>
                 <li>- Estado e Props.</li>
-                <li>- Hooks.</li>
                 <li>- Gerenciamento de estado.</li>
                 <li>- Integração com APIs.</li>
+                <li>- Hooks.</li>
               </ul>
             </CardDescriptionStyled>
           </CardContainerStyled>
