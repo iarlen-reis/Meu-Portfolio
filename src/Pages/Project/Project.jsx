@@ -14,6 +14,7 @@ import FetchGithubImage from "/projects/image-fetch-github.png";
 import SearchCityImage from "/projects/image-search-city.png";
 import RickAndMortyImage from "/projects/image-rick-and-morty.png";
 import BarberShopImage from "/projects/image-barbershop.png";
+import PokemonImage from "/projects/pokemon.jpg";
 
 const Project = () => {
   return (
@@ -33,6 +34,16 @@ const Project = () => {
             Github="https://github.com/iarlen-reis/BarberShop"
             Deploy="https://barbershop.iarlenreis.com.br/"
             techs={["React", "Typescript", "Styled-components", "Firebase"]}
+          />
+          {/* PokeAPI */}
+          <ProjectCard
+            Image={PokemonImage}
+            Title="Pokemon Mobile"
+            Description="Pokemon mobile é uma aplicação android desenvolvida 
+            utilizando React Native (Expo), Typescript e estilização feita com Nativewind."
+            Github="https://github.com/iarlen-reis/PokeDex"
+            Deploy="https://www.dropbox.com/s/dufe9hn8vnvetk3/pokemon-mobile-2.apk?dl=0"
+            techs={["React-native", "Typescript", "Nativewind", "Axios"]}
           />
           {/* RickAndMorty */}
           <ProjectCard
@@ -75,10 +86,7 @@ const Project = () => {
             Github="https://github.com/iarlen-reis/FetchGitHub"
             Deploy="https://www.fetch-github.iarlenreis.com.br/"
             techs={["React", "Styled-components", "Axios"]}
-            
           />
-
-
         </ProjectsCardContainerStyled>
       </ContainerStyled>
     </ProjectStyledContainer>
