@@ -54,22 +54,6 @@ const About = () => {
         <AboutDescriptionAdditionalContainer>
           <h2>Informações Adicionais</h2>
           <AboutDescriptionAdditional>
-            <button onClick={ChangePlans} plans={plans ? "true" : "false"}>
-              Cursos concluídos
-              {plans ? <IoIosArrowUp /> : <IoIosArrowDown />}
-            </button>
-            {plans && (
-              <TextAdditionalContainer>
-                <p>
-                  - Curso de javascript moderno do basico ao avancado, professor
-                  Otávio miranda (146 horas).
-                </p>
-                <p>
-                  - React do Zero a Maestria, Professor Matheus Battisti (30
-                  horas).
-                </p>
-              </TextAdditionalContainer>
-            )}
             <button onClick={ChangeTechs}>
               Tecnologias que pretendo aprender
               {techs ? <IoIosArrowUp /> : <IoIosArrowDown />}
