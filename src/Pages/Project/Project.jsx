@@ -10,11 +10,11 @@ import {
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 import LifeSharedImage from "/projects/image-life-shared.png";
-import FetchGithubImage from "/projects/image-fetch-github.png";
 import SearchCityImage from "/projects/image-search-city.png";
 import RickAndMortyImage from "/projects/image-rick-and-morty.png";
 import BarberShopImage from "/projects/image-barbershop.png";
-import PokemonImage from "/projects/pokemon.jpg";
+import PaquetaImage from "/projects/image-paqueta.png";
+import DevfinderImage from "/projects/image-devfinder.jpeg";
 
 const Project = () => {
   return (
@@ -25,6 +25,26 @@ const Project = () => {
           <p>Esses são meus principais projetos.</p>
         </ProjectDecriptionStyled>
         <ProjectsCardContainerStyled>
+          {/* devfinder */}
+          <ProjectCard
+            Image={DevfinderImage}
+            Title="Devfinder"
+            Description="Devfinder é uma aplicação mobile, que foi construída 
+            com react native a partir do layout do figma do frontend mentor."
+            Github="https://github.com/iarlen-reis/GithubProfile"
+            Deploy="https://www.dropbox.com/s/lbw3j0wv8597vwo/devfinder.apk?dl=0"
+            techs={["React-native", "Expo", "Typescript", "Nativewind"]}
+          />
+          {/* Paquetá calçados */}
+          <ProjectCard
+            Image={PaquetaImage}
+            Title="Paquetá calçados"
+            Description="Paquetá calçados foi um desafio da plataforma Brchallenges, onde
+            o desenvolvedor precisar desenvolver uma aplicação a partir do layout do figma."
+            Github="https://github.com/iarlen-reis/BrChallenges-PaquetaCalcados"
+            Deploy="https://paqueta-calcados.iarlenreis.com.br/"
+            techs={["React", "Typescript", "Styled-components", "Axios"]}
+          />
           {/* BarberShop */}
           <ProjectCard
             Image={BarberShopImage}
@@ -34,16 +54,6 @@ const Project = () => {
             Github="https://github.com/iarlen-reis/BarberShop"
             Deploy="https://barbershop.iarlenreis.com.br/"
             techs={["React", "Typescript", "Styled-components", "Firebase"]}
-          />
-          {/* PokeAPI */}
-          <ProjectCard
-            Image={PokemonImage}
-            Title="Pokemon Mobile"
-            Description="Pokemon mobile é uma aplicação android desenvolvida 
-            utilizando React Native (Expo), Typescript e estilização feita com Nativewind."
-            Github="https://github.com/iarlen-reis/PokeDex"
-            Deploy="https://www.dropbox.com/s/dufe9hn8vnvetk3/pokemon-mobile-2.apk?dl=0"
-            techs={["React-native", "Typescript", "Nativewind", "Axios"]}
           />
           {/* RickAndMorty */}
           <ProjectCard
@@ -75,17 +85,6 @@ const Project = () => {
             Github="https://github.com/iarlen-reis/SearchCity"
             Deploy="https://search-city.iarlenreis.com.br/"
             techs={["React", "Typescript", "Styled-components", "Axios"]}
-          />
-          {/* FindRepository */}
-          <ProjectCard
-            Image={FetchGithubImage}
-            Title="FindRepository"
-            Description="FindRepository é uma aplicação que utiliza a API do github para buscar
-            perfis, listar repositórios e futuramente irei adicionar a opção de
-            salvar repositórios."
-            Github="https://github.com/iarlen-reis/FetchGitHub"
-            Deploy="https://www.fetch-github.iarlenreis.com.br/"
-            techs={["React", "Styled-components", "Axios"]}
           />
         </ProjectsCardContainerStyled>
       </ContainerStyled>

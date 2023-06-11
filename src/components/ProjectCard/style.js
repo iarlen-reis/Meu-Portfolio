@@ -3,7 +3,8 @@ import { Colors, FontFamilly, FontsSizes } from "../../styles/GlobalStyles";
 
 export const ProjectCardContainerStyled = styled.article`
   width: 32rem;
-  min-height: 100%;
+  height: 507px;
+
 
   display: flex;
   flex-direction: column;
